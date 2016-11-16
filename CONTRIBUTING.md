@@ -59,6 +59,7 @@
 
 7. Install global Node packages
     ```
+    npm install yarn --global
     npm install webpack --global
     npm install webpack-dev-server --global
     nodenv rehash
@@ -66,7 +67,7 @@
 
 8. Install local Node packages
     ```
-    npm install
+    yarn install
     ```
 
 ## Running

@@ -2,7 +2,7 @@ clean:
 	rm -rf dist
 
 install:
-	npm install
+	yarn install
 
 build:
 	webpack -cdv
