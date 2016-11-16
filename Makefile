@@ -1,5 +1,6 @@
 GIT_COMMIT=$(shell git rev-parse --verify HEAD)
 PROJECT_NAME=react-redux-example
+BUILD_DIR=dist
 
 .PHONY: build
 build:
@@ -7,7 +8,7 @@ build:
 
 .PHONY: clean
 clean:
-	rm -rf dist
+	rm -rf ${BUILD_DIR}
 
 .PHONY: install
 install:
@@ -15,7 +16,8 @@ install:
 
 .PHONY: run
 run:
-	webpack-dev-server --progress --colors --host=0.0.0.0
+	webpack-dev-server --progress --colors --host=0.0.0.0 \
+		--output-public-path=/${BUILD_DIR}/
 
 .PHONY: view
 view:
@@ -38,8 +40,13 @@ docker-run:
 	docker run  \
 		-p 8080:8080 \
 		--name ${PROJECT_NAME} \
+		-v $$(pwd):/opt/${PROJECT_NAME} \
 		${PROJECT_NAME}:latest
 
 .PHONY: docker-down
 docker-down:
 	docker ps -aqf name=${PROJECT_NAME} | xargs docker rm --force
+
+.PHONY: docker-ssh
+docker-ssh:
+	docker exec -it $$(docker ps -aqf name=${PROJECT_NAME}) /bin/bash

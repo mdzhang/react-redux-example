@@ -1,13 +1,24 @@
+var webpack = require('webpack');
+
 const config = {
-  // webpack should start bundling from app/main.js
-  context: __dirname + "/app",
-  entry: "./main.js",
+  entry: [
+    // main app entry point
+    "./app/main.js",
+    'webpack-hot-middleware/client'
+  ],
 
   // output compiled bundle into dist/bundle.js
   output: {
     filename: "bundle.js",
-    path: __dirname + "/dist",
+    path: __dirname + "/dist"
   },
+
+  plugins: [
+    // see webpack-hot-middleware
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
 
   module: {
     // each of the following loaders will be applied to files that match the
