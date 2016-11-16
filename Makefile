@@ -1,11 +1,45 @@
-clean:
-	rm -rf dist
+GIT_COMMIT=$(shell git rev-parse --verify HEAD)
+PROJECT_NAME=react-redux-example
 
-install:
-	yarn install
-
+.PHONY: build
 build:
 	webpack -cdv
 
+.PHONY: clean
+clean:
+	rm -rf dist
+
+.PHONY: install
+install:
+	yarn install
+
+.PHONY: run
 run:
-	webpack-dev-server --progress --colors
+	webpack-dev-server --progress --colors --host=0.0.0.0
+
+.PHONY: view
+view:
+	open http://localhost:8080/webpack-dev-server/
+
+##################################
+# Docker container management
+##################################
+
+.PHONY: docker-build
+docker-build:
+	docker build \
+    --build-arg GIT_COMMIT=${GIT_COMMIT} \
+    -t ${PROJECT_NAME}:latest \
+    -t ${PROJECT_NAME}:${GIT_COMMIT} \
+    .
+
+.PHONY: docker-run
+docker-run:
+	docker run  \
+		-p 8080:8080 \
+		--name ${PROJECT_NAME} \
+		${PROJECT_NAME}:latest
+
+.PHONY: docker-down
+docker-down:
+	docker ps -aqf name=${PROJECT_NAME} | xargs docker rm --force

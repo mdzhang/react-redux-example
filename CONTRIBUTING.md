@@ -78,8 +78,18 @@
 
 ## Running
 
+#### On host
+
 ```
+make build
 make run
+```
+
+#### Using docker container
+
+```
+make docker-build
+make docker-run
 ```
 
 ## Testing

@@ -1,0 +1,8 @@
+dist
+node_modules
+.envrc
+.envrc.sample
+.gitignore
+.node-version
+Brewfile
+*.md
