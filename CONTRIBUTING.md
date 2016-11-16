@@ -60,8 +60,6 @@
 7. Install global Node packages
     ```
     npm install yarn --global
-    npm install webpack --global
-    npm install webpack-dev-server --global
     nodenv rehash
     ```
 
@@ -69,6 +67,14 @@
     ```
     yarn install
     ```
+
+9. Setup development environment variables
+    ```
+    cp .envrc.sample .envrc
+    direnv allow
+    ```
+
+    This is critical for adding _local_ npm packages onto your `$PATH`!
 
 ## Running
 
