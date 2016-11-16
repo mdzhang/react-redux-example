@@ -32,7 +32,7 @@ const config = {
         loader: "babel-loader",
         query: {
           // explicitly tell babel what transformations to run
-          presets:['react', 'es2015']
+          presets:['react', 'es2015', 'stage-0']
         }
       }
     ]
