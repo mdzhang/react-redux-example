@@ -5,6 +5,7 @@
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Running](#running)
+* [Viewing](#viewing)
 * [Testing](#testing)
 * [Style](#style)
 
