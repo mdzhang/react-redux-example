@@ -12,9 +12,11 @@ Example react-redux app
 
 Demos:
 
-- [React](https://facebook.github.io/react/docs/hello-world.html)
+- [Docker](https://docs.docker.com/engine/reference/run/)
+- [Eslint](http://eslint.org/)
+- [Lucid UI](http://appnexus.github.io/lucid/#/) (pending)
+- [React](https://facebook.github.io/react)
+- [React Router](https://github.com/ReactTraining/react-router) (pending)
 - [Redux](http://redux.js.org/) (pending)
 - [Webpack](https://webpack.github.io/docs/)
-- [Docker](https://docs.docker.com/engine/reference/run/)
 - [Yarn](https://yarnpkg.com/en/docs/)
-- [Eslint](http://eslint.org/)
