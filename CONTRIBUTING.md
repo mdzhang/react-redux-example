@@ -40,16 +40,20 @@
 
 3. Configure your shell to enable shims and automatic environment variable loading
     ```
-    # ~/.bashrc
+    # ~/.bash_profile
 
     if which nodenv > /dev/null; then
       eval "$(nodenv init -)";
+    fi
+
+    if which direnv > /dev/null; then
+      eval "$(direnv hook bash)"
     fi
     ```
 
 4. Restart shell so that changes take effect
     ```
-    source ~/.bashrc
+    source ~/.bash_profile
     ```
 
 5. Install Node
@@ -90,6 +94,12 @@ make run
 ```
 make docker-build
 make docker-run
+```
+
+## Viewing
+
+```
+open localhost:8080
 ```
 
 ## Testing
