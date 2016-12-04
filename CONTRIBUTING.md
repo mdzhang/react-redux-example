@@ -81,6 +81,15 @@
 
     This is critical for adding _local_ npm packages onto your `$PATH`!
 
+### Optional Steps
+
+* Install git hooks
+    ```
+    pre-commit install
+    ```
+
+    *NB*: These hooks will fail if `.envrc` is not up to date
+
 ## Running
 
 #### On host

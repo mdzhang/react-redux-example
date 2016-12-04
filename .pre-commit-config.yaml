@@ -1,0 +1,7 @@
+-   repo: local
+    hooks:
+    -   id: check-eslint
+        name: check-eslint
+        entry: ./scripts/lint.sh
+        language: script
+        files: \.(js|jsx)$
