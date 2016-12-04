@@ -1,16 +1,20 @@
+const path = require('path');
 const webpack = require('webpack');
+
+const dir = path.resolve('.');
+const src = path.join(dir, 'src');
 
 const config = {
   entry: [
     // main app entry point
-    './app/main.jsx',
+    './src/index',
     'webpack-hot-middleware/client',
   ],
 
   // output compiled bundle into dist/bundle.js
   output: {
+    path: path.join(dir, 'dist'),
     filename: 'bundle.js',
-    path: `${__dirname}/dist`,
   },
 
   plugins: [
@@ -36,6 +40,12 @@ const config = {
         },
       },
     ],
+  },
+
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+    modulesDirectories: ['node_modules'],
+    root: src,
   },
 };
 

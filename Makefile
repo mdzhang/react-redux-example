@@ -22,6 +22,10 @@ lint:
 lint-fix:
 	eslint . --ext .jsx --ext js --fix
 
+.PHONY: open
+open:
+	open http://localhost:8080/webpack-dev-server
+
 .PHONY: run
 run:
 	webpack-dev-server --progress --colors --host=0.0.0.0 \
@@ -55,6 +59,10 @@ docker-run:
 docker-down:
 	docker ps -aqf name=${PROJECT_NAME} | xargs docker rm --force
 
+.PHONY: docker-open
+docker-open:
+	open http://localhost:8080
+	
 .PHONY: docker-ssh
 docker-ssh:
 	docker exec -it $$(docker ps -aqf name=${PROJECT_NAME}) /bin/bash

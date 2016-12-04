@@ -108,8 +108,16 @@ make docker-run
 
 ## Viewing
 
+#### On host
+
 ```
-open localhost:8080
+make open
+```
+
+#### Using docker container
+
+```
+make docker-open
 ```
 
 ## Testing
