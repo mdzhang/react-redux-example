@@ -14,6 +14,14 @@ clean:
 install:
 	yarn install
 
+.PHONY: lint
+lint:
+	eslint . --ext .jsx --ext js
+
+.PHONY: lint-fix
+lint-fix:
+	eslint . --ext .jsx --ext js --fix
+
 .PHONY: run
 run:
 	webpack-dev-server --progress --colors --host=0.0.0.0 \

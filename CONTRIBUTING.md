@@ -98,4 +98,5 @@ TODO
 
 ## Style
 
-TODO
+See [Airbnb's JS style guide](https://github.com/airbnb/javascript)
+

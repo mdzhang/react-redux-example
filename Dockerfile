@@ -4,9 +4,10 @@ MAINTAINER Michelle D. Zhang <zhang.michelle.d@gmail.com>
 RUN mkdir -p /opt/react-redux-example
 WORKDIR /opt/react-redux-example
 
+RUN npm install -g yarn
+
 COPY package.json /opt/react-redux-example
 COPY yarn.lock /opt/react-redux-example
-RUN npm install -g yarn
 RUN yarn
 
 COPY . /opt/react-redux-example

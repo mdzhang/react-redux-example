@@ -22,7 +22,7 @@ export default class HelloWorld extends React.Component {
   render() {
     return (
       <div>
-        <HelloWorldWidget name={this.state.name} updateName={e => this.updateName(e)} />
+        <HelloWorldWidget name={this.state.name} updateName={(e) => this.updateName(e)} />
       </div>
     );
   }
