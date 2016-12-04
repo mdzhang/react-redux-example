@@ -1,8 +1,10 @@
+.git
 dist
 node_modules
 .envrc
 .envrc.sample
 .gitignore
 .node-version
+.pre-commit-config.yaml
 Brewfile
 *.md
