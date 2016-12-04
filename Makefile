@@ -53,6 +53,7 @@ docker-run:
 		-p 8080:8080 \
 		--name ${PROJECT_NAME} \
 		-v $$(pwd):/opt/${PROJECT_NAME} \
+		-v node_modules:/opt/${PROJECT_NAME}/node_modules \
 		${PROJECT_NAME}:latest
 
 .PHONY: docker-down
