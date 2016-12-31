@@ -1,9 +1,11 @@
 dist
 docs
 node_modules
+.deploy
 .envrc
 .envrc.sample
 .gitignore
+.grunt
 .node-version
 .pre-commit-config.yaml
 Brewfile

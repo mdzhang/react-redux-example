@@ -11,18 +11,12 @@ module.exports = (grunt) => {
       },
       dist: {
         files: [
-          // Upload webpack bundle to assets path in S3
+          // Upload webpack bundle to remote server assets path
+          // and index.html to remote server root path
           {
             expand: true,
-            cwd: '<%= localBuildPath %>',
-            src: ['**'],
-            dest: '<%= s3AssetsPath %>',
-          },
-          // Upload index.html to root path in S3
-          {
-            expand: true,
-            cwd: '<%= localBuildPath %>',
-            src: ['index.html'],
+            cwd: '<%= deployPath %>',
+            src: ['**/*'],
             dest: '/',
           },
         ],

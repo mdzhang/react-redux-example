@@ -2,6 +2,8 @@
 
 Example react-redux app
 
+See [preview](http://mdzhang.github.io/react-redux-example);
+
 | Circle CI |
 |-----------|
 | [![CircleCI](https://circleci.com/gh/mdzhang/react-redux-example.svg?style=shield)](https://circleci.com/gh/mdzhang/react-redux-example) |
@@ -10,7 +12,7 @@ Example react-redux app
 
 * [Description](#description)
 * [Contributing](docs/CONTRIBUTING.md)
-* [Deploying](docs/DEPLOYING.md)
+* [Deploying](docs/deploying)
 * [License](docs/LICENSE.md)
 
 ## Description
@@ -29,3 +31,5 @@ Demos the following:
 | [Webpack](https://webpack.github.io/docs/) | Build tool, module bundler |
 | [Yarn](https://yarnpkg.com/en/docs/) | Package manager |
 | [Grunt](http://gruntjs.com/) | Deploy task runner |
+| [AWS S3](https://aws.amazon.com/s3/) | Static site hosting |
+| [Github Pages](https://pages.github.com/) | Static site hosting |
