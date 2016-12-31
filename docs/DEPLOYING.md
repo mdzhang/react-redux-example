@@ -7,9 +7,10 @@
 
 ## Initial Setup
 
-This project uses [S3](https://aws.amazon.com/s3/) to store the generated static site files. You must create an S3 bucket that 
-  - has static website hosting enabled
-  - uses `index.html` as both its index and error documents
+This project uses [S3](https://aws.amazon.com/s3/) to store the generated static site files. You must create an S3 bucket that
+
+- has static website hosting enabled
+- uses `index.html` as both its index and error documents
 
 ## Deploy Steps
 

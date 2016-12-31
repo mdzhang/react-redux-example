@@ -7,7 +7,7 @@
 - Rerun [setup steps](CONTRIBUTING.md#installation) 5-8
   - Upgrade `brew` and `nodenv` if necessary:
 
-      ```
+      ```sh
       brew doctor
       brew upgrade
       brew update nodenv
@@ -18,7 +18,7 @@
 - See outdated packages with `npm outdated`
 - Use `npm-check-updates` for bulk updating package versions in `package.json`
 
-    ``
+    ```sh
     # upgrade all packages
     ncu -a
 

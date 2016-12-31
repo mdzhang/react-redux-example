@@ -12,35 +12,35 @@
 ## Requirements
 
 1. [Homebrew](http://brew.sh) for managing software packages on OS X
-    ```
+    ```sh
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
 
 2. [git](https://git-scm.com) for version control
-    ```
+    ```sh
     brew install git
     ```
 
 3. [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) for bundling packages with Homebrew
-    ```
+    ```sh
     brew tap Homebrew/bundle
     ```
 
 ## Installation
 
 1. Clone this repo
-    ```
+    ```sh
     git clone git@github.com:mdzhang/react-redux-example.git
     cd react-redux-example
     ```
 
 2. Install Homebrew packages
-    ```
+    ```sh
     brew bundle
     ```
 
 3. Configure your shell to enable shims and automatic environment variable loading
-    ```
+    ```sh
     # ~/.bash_profile
 
     if which nodenv > /dev/null; then
@@ -53,28 +53,28 @@
     ```
 
 4. Restart shell so that changes take effect
-    ```
+    ```sh
     source ~/.bash_profile
     ```
 
 5. Install Node
-    ```
+    ```sh
     nodenv install -s $(cat ./.node-version)
     ```
 
-7. Install global Node packages
-    ```
+6. Install global Node packages
+    ```sh
     npm install yarn --global
     nodenv rehash
     ```
 
-8. Install local Node packages
-    ```
+7. Install local Node packages
+    ```sh
     yarn install
     ```
 
-9. Setup development environment variables
-    ```
+8. Setup development environment variables
+    ```sh
     cp .envrc.sample .envrc
     direnv allow
     ```
@@ -84,7 +84,7 @@
 ### Optional Steps
 
 * Install git hooks
-    ```
+    ```sh
     pre-commit install
     ```
 
@@ -94,14 +94,14 @@
 
 #### On host
 
-```
+```sh
 make build
 make run
 ```
 
 #### Using docker container
 
-```
+```sh
 make docker-build
 make docker-run
 ```
@@ -110,13 +110,13 @@ make docker-run
 
 #### On host
 
-```
+```sh
 make open
 ```
 
 #### Using docker container
 
-```
+```sh
 make docker-open
 ```
 
@@ -127,4 +127,3 @@ TODO
 ## Style
 
 See [Airbnb's JS style guide](https://github.com/airbnb/javascript)
-
