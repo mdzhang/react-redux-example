@@ -1,12 +1,12 @@
--   repo: local
-    hooks:
-    -   id: check-eslint
-        name: check-eslint
-        entry: ./scripts/lint.sh
-        language: script
-        files: \.(js|jsx)$
-    -   id: check-markdown
-        name: check-markdown
-        entry: markdownlint
-        language: system
-        files: \.(md)$
+- repo: local
+  hooks:
+  - id: check-eslint
+    name: check-eslint
+    entry: ./scripts/lint.sh
+    language: script
+    files: \.(js|jsx)$
+  - id: check-markdown
+    name: check-markdown
+    entry: markdownlint
+    language: system
+    files: \.(md)$
