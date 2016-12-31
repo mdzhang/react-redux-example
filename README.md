@@ -6,17 +6,21 @@ Example react-redux app
 
 * [Description](#description)
 * [Contributing](CONTRIBUTING.md)
+* [Deploying](DEPLOYING.md)
 * [License](LICENSE.md)
 
 ## Description
 
-Demos:
+Demos the following:
 
-- [Docker](https://docs.docker.com/engine/reference/run/)
-- [Eslint](http://eslint.org/)
-- [Lucid UI](http://appnexus.github.io/lucid/#/) (pending)
-- [React](https://facebook.github.io/react)
-- [React Router](https://github.com/ReactTraining/react-router) (pending)
-- [Redux](http://redux.js.org/) (pending)
-- [Webpack](https://webpack.github.io/docs/)
-- [Yarn](https://yarnpkg.com/en/docs/)
+| Name | Purpose |
+|------|---------|
+| [Docker](https://docs.docker.com/engine/reference/run/) | Containerization |
+| [Eslint](http://eslint.org/) | Code linting |
+| [Lucid UI](http://appnexus.github.io/lucid/#/) (pending) | CSS library |
+| [React](https://facebook.github.io/react) | Frontend framework |
+| [React Router](https://github.com/ReactTraining/react-router) (pending) | Routing |
+| [Redux](http://redux.js.org/) (pending) | Data store |
+| [Webpack](https://webpack.github.io/docs/) | Build tool, module bundler |
+| [Yarn](https://yarnpkg.com/en/docs/) | Package manager |
+| [Grunt](http://gruntjs.com/) | Deploy task runner |

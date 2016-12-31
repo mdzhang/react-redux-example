@@ -1,6 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 
+console.log(`NODE_ENV is ${process.env.NODE_ENV}`); // eslint-disable-line no-console
+
+const isDevBuild = process.env.NODE_ENV === 'development';
+
 const dir = path.resolve('.');
 const src = path.join(dir, 'src');
 
@@ -8,21 +12,14 @@ const config = {
   entry: [
     // main app entry point
     './src/index',
-    'webpack-hot-middleware/client',
   ],
 
-  // output compiled bundle into dist/bundle.js
+  // output compiled bundle into dist/<env>/bundle.js
   output: {
-    path: path.join(dir, 'dist'),
+    path: path.join(dir, 'dist', process.env.NODE_ENV),
     filename: 'bundle.js',
+    publicPath: '/assets/',
   },
-
-  plugins: [
-    // see webpack-hot-middleware
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-  ],
 
   module: {
     // each of the following loaders will be applied to files that match the
@@ -50,3 +47,13 @@ const config = {
 };
 
 module.exports = config;
+
+if (isDevBuild) {
+  config.entry.push('webpack-hot-middleware/client');
+  config.plugins = [
+    // see webpack-hot-middleware
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+  ];
+}
