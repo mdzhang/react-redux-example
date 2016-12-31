@@ -1,4 +1,4 @@
-FROM node:6.3.1
+FROM node:7.2.1
 MAINTAINER Michelle D. Zhang <zhang.michelle.d@gmail.com>
 
 RUN mkdir -p /opt/react-redux-example
