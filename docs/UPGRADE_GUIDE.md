@@ -12,8 +12,17 @@
       brew upgrade
       brew update nodenv
       ```
-- Manually confirm the following commands:
-  - `make docker-build`
-  - `make docker-run`
-  - `make build`
-  - `make run`
+
+## Upgrading Node packages
+
+- See outdated packages with `npm outdated`
+- Use `npm-check-updates` for bulk updating package versions in `package.json`
+
+    ``
+    # upgrade all packages
+    ncu -a
+
+    # upgrade all packages except eslint-plugin-jsx-a11y
+    ncu -a -x eslint-plugin-jsx-a11y
+    ```
+- After updating `package.json` don't forget to update `yarn.lock` by running `yarn`
