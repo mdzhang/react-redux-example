@@ -20,11 +20,12 @@ export default class HelloWorld extends React.Component {
         </h3>
         <hr />
         <form className="form-horizontal">
-          <label>
+          <label htmlFor="nameInput">
             Say hello to:
           </label>
           <input
             type="text"
+            name="nameInput"
             value={name}
             onChange={(e) => this.handleChange(e)}
           />

@@ -2,6 +2,9 @@
 
 Example react-redux app
 
+| Circle CI |
+| [![CircleCI](https://circleci.com/gh/mdzhang/react-redux-example.svg?style=shield)](https://circleci.com/gh/mdzhang/react-redux-example) |
+
 ## Table of Contents
 
 * [Description](#description)
