@@ -2,8 +2,9 @@
   hooks:
   - id: check-eslint
     name: check-eslint
-    entry: ./scripts/lint.sh
-    language: script
+    entry: eslint
+    args: [--ext=.js, --ext=.jsx]
+    language: system
     files: \.(js|jsx)$
   - id: check-markdown
     name: check-markdown
