@@ -1,0 +1,32 @@
+machine:
+  node:
+    version: 7.2.1
+  python:
+    version: 3.5.2
+  environment:
+    YARN_VERSION: 0.18.1
+    PATH: "${PATH}:${HOME}/.yarn/bin:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
+dependencies:
+  pre:
+    - |
+      if [[ ! -e ~/.yarn/bin/yarn || $(yarn --version) != "${YARN_VERSION}" ]]; then
+        echo "Download and install Yarn."
+        curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
+      else
+        echo "The correct version of Yarn is already installed."
+      fi
+    - pip install --upgrade pip
+  override:
+    - pip install pre-commit
+    - yarn install
+  post:
+    - pre-commit install
+  cache_directories:
+    - ~/.yarn
+    - ~/.cache/yarn
+
+test:
+  override:
+    - NODE_ENV=test pre-commit run --all-files
+    - NODE_ENV=test make build

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import HelloWorld from '../components/HelloWorld.jsx';
+import HelloWorld from 'components/HelloWorld.jsx';
 
 export default class HelloWorldContainer extends React.Component {
   static propTypes = {

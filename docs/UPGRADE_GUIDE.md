@@ -4,6 +4,7 @@
 
 - Update [Dockerfile](../Dockerfile)
 - Update [.node-version](../.node-version)
+- Update node version in [circle.yml](../circle.yml)
 - Rerun [setup steps](CONTRIBUTING.md#installation) 5-8
   - Upgrade `brew` and `nodenv` if necessary:
 
