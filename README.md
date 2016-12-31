@@ -17,6 +17,7 @@ Demos the following:
 |------|---------|
 | [Docker](https://docs.docker.com/engine/reference/run/) | Containerization |
 | [Eslint](http://eslint.org/) | Code linting |
+| [pre-commit](http://pre-commit.com/) | Git hooks |
 | [Lucid UI](http://appnexus.github.io/lucid/#/) (pending) | CSS library |
 | [React](https://facebook.github.io/react) | Frontend framework |
 | [React Router](https://github.com/ReactTraining/react-router) (pending) | Routing |

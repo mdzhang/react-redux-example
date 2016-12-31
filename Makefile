@@ -16,11 +16,11 @@ install:
 
 .PHONY: lint
 lint:
-	eslint . --ext .jsx --ext js
+	npm run lint
 
 .PHONY: lint-fix
 lint-fix:
-	eslint . --ext .jsx --ext js --fix
+	npm run lint:fix
 
 .PHONY: open
 open:
