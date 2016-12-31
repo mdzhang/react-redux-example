@@ -35,6 +35,7 @@ const config = {
           // explicitly tell babel what transformations to run
           presets: ['react', 'es2015', 'stage-0'],
         },
+        include: src,
       },
     ],
   },
