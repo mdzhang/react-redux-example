@@ -5,9 +5,9 @@ Example react-redux app
 ## Table of Contents
 
 * [Description](#description)
-* [Contributing](CONTRIBUTING.md)
-* [Deploying](DEPLOYING.md)
-* [License](LICENSE.md)
+* [Contributing](docs/CONTRIBUTING.md)
+* [Deploying](docs/DEPLOYING.md)
+* [License](docs/LICENSE.md)
 
 ## Description
 
