@@ -27,6 +27,8 @@ dependencies:
     - ~/.cache/yarn
 
 test:
+  environment:
+    NODE_ENV: test
   override:
     - pre-commit run --all-files
-    - NODE_ENV=test make build
+    - make build
