@@ -28,12 +28,10 @@ open:
 
 .PHONY: run
 run:
-	webpack-dev-server --progress --colors --host=0.0.0.0 \
-		--output-public-path=/${BUILD_DIR}/
-
-.PHONY: view
-view:
-	open http://localhost:8080/webpack-dev-server/
+	webpack-dev-server \
+		--progress --colors --host=0.0.0.0 \
+		--content-base src/ \
+		--output-public-path=/assets/
 
 ##################################
 # Docker container management

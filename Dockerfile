@@ -14,7 +14,7 @@ COPY . /opt/react-redux-example
 
 ARG GIT_COMMIT
 ENV GIT_COMMIT $GIT_COMMIT
-ENV PATH="./node_modules/.bin:${PATH}"
+ENV PATH=/opt/react-redux-example/node_modules/.bin:${PATH}
 ENV NODE_ENV $NODE_ENV
 
 EXPOSE 8080
