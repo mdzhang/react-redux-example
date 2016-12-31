@@ -33,6 +33,12 @@ run:
 		--content-base src/ \
 		--output-public-path=/assets/
 
+.PHONY: test
+test:
+	export NODE_ENV=test && \
+		make build && \
+		npm test
+
 ##################################
 # Docker container management
 ##################################
@@ -61,7 +67,11 @@ docker-down:
 .PHONY: docker-open
 docker-open:
 	open http://localhost:8080
-	
+
 .PHONY: docker-ssh
 docker-ssh:
 	docker exec -it $$(docker ps -aqf name=${PROJECT_NAME}) /bin/bash
+
+.PHONY: docker-test
+docker-test: docker-build
+	docker run --rm -t ${PROJECT_NAME} make test

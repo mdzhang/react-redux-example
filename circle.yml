@@ -28,5 +28,4 @@ dependencies:
 
 test:
   override:
-    - NODE_ENV=test pre-commit run --all-files
-    - NODE_ENV=test make build
+    - make test

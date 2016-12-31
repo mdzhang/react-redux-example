@@ -122,7 +122,17 @@ make docker-open
 
 ## Testing
 
-TODO
+#### On host
+
+```sh
+make test
+```
+
+#### Using docker container
+
+```sh
+make docker-test
+```
 
 ## Style
 
