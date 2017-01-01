@@ -37,3 +37,4 @@ Demos the following:
 | [Grunt](http://gruntjs.com/) | Deploy task runner |
 | [AWS S3](https://aws.amazon.com/s3/) | Static site hosting |
 | [Github Pages](https://pages.github.com/) | Static site hosting |
+| [Firebase](https://www.firebase.com) | Static site hosting |
