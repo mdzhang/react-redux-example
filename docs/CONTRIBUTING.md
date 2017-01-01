@@ -2,12 +2,12 @@
 
 ## Table of Contents
 
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Running](#running)
-* [Viewing](#viewing)
-* [Testing](#testing)
-* [Style](#style)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Running](#running)
+- [Viewing](#viewing)
+- [Testing](#testing)
+- [Style](#style)
 
 ## Requirements
 
@@ -83,7 +83,7 @@
 
 ### Optional Steps
 
-* Install git hooks
+- Install git hooks
     ```sh
     pre-commit install
     ```

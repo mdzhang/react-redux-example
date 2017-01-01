@@ -4,8 +4,8 @@ Deploy using [Github Pages](https://pages.github.com/).
 
 ## Table of Contents
 
-* [Initial Setup](#initial-setup)
-* [Deploy Steps](#deploy-steps)
+- [Initial Setup](#initial-setup)
+- [Deploy Steps](#deploy-steps)
 
 ## Initial Setup
 
@@ -15,4 +15,4 @@ Deploy using [Github Pages](https://pages.github.com/).
 
 #### Manual Deployment From Host Machine
 
-* Run `grunt deploy:gh_pages`
+- Run `grunt deploy:gh_pages`

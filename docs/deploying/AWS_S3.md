@@ -4,8 +4,8 @@ Deploy by uploading static assets and index.html to an AWS [S3](https://aws.amaz
 
 ## Table of Contents
 
-* [Initial Setup](#initial-setup)
-* [Deploy Steps](#deploy-steps)
+- [Initial Setup](#initial-setup)
+- [Deploy Steps](#deploy-steps)
 
 ## Initial Setup
 
@@ -25,5 +25,5 @@ Get S3 credentials to deploy your site. Either ask a project admin for or [gener
 
 #### Manual Deployment From Host Machine
 
-* Update AWS credentials and `NODE_ENV` in your `.envrc` file
-* Run `grunt deploy:aws_s3`
+- Update AWS credentials and `NODE_ENV` in your `.envrc` file
+- Run `grunt deploy:aws_s3`

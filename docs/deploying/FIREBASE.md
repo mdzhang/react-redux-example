@@ -4,8 +4,8 @@ Deploy by uploading static assets and index.html to [Firebase](https://www.fireb
 
 ## Table of Contents
 
-* [Initial Setup](#initial-setup)
-* [Deploy Steps](#deploy-steps)
+- [Initial Setup](#initial-setup)
+- [Deploy Steps](#deploy-steps)
 
 ## Initial Setup
 
@@ -26,5 +26,5 @@ You can generate a `$FIREBASE_TOKEN` yourself using: `firebase login:ci`
 
 #### Manual Deployment From Host Machine
 
-* Update Firebase credentials in your `.envrc` file
-* Run `grunt deploy:firebase`
+- Update Firebase credentials in your `.envrc` file
+- Run `grunt deploy:firebase`

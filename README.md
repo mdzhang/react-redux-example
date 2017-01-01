@@ -8,11 +8,11 @@ Example react-redux app
 
 ## Table of Contents
 
-* [Description](#description)
-* [Live Examples](#live-examples)
-* [Contributing](docs/CONTRIBUTING.md)
-* [Deploying](docs/deploying)
-* [License](docs/LICENSE.md)
+- [Description](#description)
+- [Live Examples](#live-examples)
+- [Contributing](docs/CONTRIBUTING.md)
+- [Deploying](docs/deploying)
+- [License](docs/LICENSE.md)
 
 ## Description
 
