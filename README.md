@@ -21,6 +21,7 @@ Demos the following:
 | Name | Purpose |
 |------|---------|
 | [AWS S3](https://aws.amazon.com/s3/) | Static site hosting |
+| [CircleCI](https://circleci.com/) | Continuous integration |
 | [Docker](https://docs.docker.com/engine/reference/run/) | Containerization |
 | [Eslint](http://eslint.org/) | Code linting |
 | [Firebase](https://www.firebase.com) | Static site hosting |
