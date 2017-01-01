@@ -14,3 +14,7 @@ export AWS_ACCESS_KEY_ID=xxxxxx
 export AWS_SECRET_ACCESS_KEY=xxxxxx
 export AWS_S3_BUCKET=xxxxxx
 export AWS_REGION=xxxxxx
+
+# With Firebase
+export FIREBASE_TOKEN=xxxxxx
+export FIREBASE_URL=xxxxxx

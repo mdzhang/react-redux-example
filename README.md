@@ -2,7 +2,11 @@
 
 Example react-redux app
 
-See [preview](http://mdzhang.github.io/react-redux-example);
+Examples:
+
+- with [Github Pages](http://mdzhang.github.io/react-redux-example)
+- with [Firebase](https://react-redux-example-eb179.firebaseapp.com)
+- with [AWS S3](http://dev.mdzhang.com/react-redux-example/)
 
 | Circle CI |
 |-----------|

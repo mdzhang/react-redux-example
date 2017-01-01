@@ -13,7 +13,7 @@ module.exports = (grunt) => {
 
     if (deployMethod === 'gh_pages') {
       tasks.push('gh-pages');
-    } else if (deployMethod === 'aws_s3') {
+    } else if (deployMethod === 'aws_s3' || deployMethod === 'firebase') {
       tasks.push(deployMethod);
     } else {
       throw new Error(`Invalid deploy method: ${deployMethod}`);
