@@ -1,10 +1,10 @@
 FROM node:7.2.1
 MAINTAINER Michelle D. Zhang <zhang.michelle.d@gmail.com>
 
-RUN mkdir -p /opt/react-redux-example
-WORKDIR /opt/react-redux-example
+RUN npm install -g yarn && \
+    mkdir -p /opt/react-redux-example
 
-RUN npm install -g yarn
+WORKDIR /opt/react-redux-example
 
 COPY package.json /opt/react-redux-example
 COPY yarn.lock /opt/react-redux-example
