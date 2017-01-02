@@ -20,6 +20,7 @@ Demos the following:
 
 | Name | Purpose |
 |------|---------|
+| [Appveyor](https://www.appveyor.com) | Continuous integration |
 | [AWS S3](https://aws.amazon.com/s3/) | Static site hosting |
 | [CircleCI](https://circleci.com/) | Continuous integration |
 | [Docker](https://docs.docker.com/engine/reference/run/) | Containerization |

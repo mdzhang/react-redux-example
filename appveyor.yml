@@ -1,0 +1,28 @@
+# appveyor file
+# http://www.appveyor.com/docs/appveyor-yml
+
+branches:
+  except:
+    - gh-pages
+
+build: off
+
+environment:
+  matrix:
+    - nodejs_version: "7.2.1"
+    - python_version: "3.5.2"
+
+install:
+  - npm install yarn -g
+  - yarn install
+  - pip install pre-commit
+  - pre-commit install
+
+skip_commits:
+  message: \[(ci skip|skip ci|DARK)\].*
+
+test_script:
+  - node --version
+  - npm --version
+  - yarn --version
+  - cmd: make test
